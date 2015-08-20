@@ -9,7 +9,7 @@ var app = require('http').createServer(function (request, response) {
     var uri = require('url').parse(request.url).pathname,
         filename = path.join(process.cwd(), uri);
 
-    path.exists(filename, function (exists) {
+    fs.exists(filename, function (exists) {
         if (!exists) {
             response.writeHead(404, {
                 "Content-Type": "text/plain"
@@ -38,6 +38,6 @@ var app = require('http').createServer(function (request, response) {
     });
 });
 
-app.listen(8888);
+app.listen(3000);
 
 require('./WebRTC-Scalable-Broadcast.js')(app);
