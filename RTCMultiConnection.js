@@ -41,7 +41,7 @@ connection.rtcConfiguration
     // you can always override it!
     // www.RTCMultiConnection.org/docs/channel-id/
     //window.RMCDefaultChannel = location.href.replace(/\/|:|#|\?|\$|\^|%|\.|`|~|!|@|\[|\||]|\|*. /g, '').split('\n').join('').split('\r').join('');
-    window.RMCDefaultChannel = 'agent-peak-channel';
+    window.RMCDefaultChannel = 'channel1';
 
     // www.RTCMultiConnection.org/docs/constructor/
     window.RTCMultiConnection = function(channel) {
